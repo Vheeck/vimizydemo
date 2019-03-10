@@ -1,0 +1,11 @@
+{
+  "name": "firstvapidproject",
+  "vapid": {
+  },
+  "scripts": {
+    "start": "vapid start ."
+  },
+  "dependencies": {
+    "@vapid/cli": "^0.7.2"
+  }
+}
