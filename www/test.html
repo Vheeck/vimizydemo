@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TEST PAGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .rip {
+            height: 70px;
+            width: 100px;
+            background-image: -webkit-linear-gradient(left, green, green, green, green, green, green, orangered, orangered, orangered, orangered);
+            background-image: -moz-linear-gradient(left, green, green, green, green, green, green, orangered, orangered, orangered, orangered);
+            background-image: -ms-linear-gradient(left, green, green, green, green, green, green, orangered, orangered, orangered, orangered);
+            background-color: -o-linear-gradient(left,green, green, green, green, green, green, orangered, orangered, orangered, orangered)
+
+        }
+        /* .innerDiv {
+            padding: 20%;
+            background-color: rgba(0, 120, 0, 0.4)
+        } */
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="baseDiv">
+        <div class="innerDiv"> 
+            <div class="rip"></div>
+        </div>
+    </div>
+
+    <style>
+        .TLGA {
+            padding: 0.8%;
+            border-right-width: 0.1rem;
+            border-right-color: black;
+            border-right-style: solid;
+            text-align: right;
+            width: 20%;
+            /* background-color: grey; */
+        }
+        .TSB {
+            padding: 0.8%;
+            text-align: left;
+            width: 80%;
+            /* background-color: grey; */
+        }
+        #stack {
+            display: block;
+            width: 100%;
+            background-color: black;
+            opacity: 0.8;
+            /* border-radius: 2px; */
+            height: 2rem;
+        }
+        .bars {
+            display: inline-block;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            height: fit-content;
+            background-color: grey;
+            text-overflow: ellipsis;
+            /* border-radius: 2px; */
+            transition: 1.5s;
+            text-align: center;
+        }
+    </style>
+
+    <table style="width:100%">
+        <tr>
+            <td class="TLGA">Name of LGA</td>
+            <td class="TSB">
+                <div id="stack" align="left">
+                    <div data-toggle="tooltip" data-placement="top" title="{{1 Label='APC Total'}}" data-trigger="hover" id="stack1" class="apc_p bars" style="width: 50%"></div><div data-toggle="tooltip" data-placement="top" title="{{2 Label='PDP Total'}}" data-trigger="hover" id="stack2" class="pdp_p bars" style="width: 0%"></div><div data-toggle="tooltip" data-placement="top" title="{{3 Label='AAC Total'}}" data-trigger="hover" id="stack3" class="aac_p bars" style="width: 0%"></div><div data-toggle="tooltip" data-placement="top" title="{{4 Label='YPP Total'}}" data-trigger="hover" id="stack4" class="ypp_p bars" style="width: 0%"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="TLGA">Name of LGA</td>
+            <td class="TSB">Stack Bar</td>
+        </tr>
+        <tr>
+            <td class="TLGA">Name of LGA</td>
+            <td class="TSB">Stack Bar</td>
+        </tr>
+        <tr>
+            <td class="TLGA">Name of LGA</td>
+            <td class="TSB">Stack Bar</td>
+        </tr>
+        <tr>
+            <td class="TLGA">Name of LGA</td>
+            <td class="TSB">Stack Bar</td>
+        </tr>
+    </table>
+
+</body>
+</html>

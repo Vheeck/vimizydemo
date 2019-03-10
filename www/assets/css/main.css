@@ -1,0 +1,151 @@
+* {
+    color: white;
+    /* text-align: center; */
+    /* font-weight: bold; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1 {
+    text-align: center;
+}
+body {
+    /* background-color: black; */
+}
+.table {
+    /* background-color: chartreuse; */
+    width: 100%;
+}
+.tr {
+    background-color: #014012;
+    margin: 0.5%;
+    padding: 0.8%;
+    border-radius: 15px;
+}
+.rank_h {
+    display: inline-block;
+    width: 5%;
+    color: black;
+    text-align: center;
+}
+.name_h {
+    display: inline-block;
+    width: 60%;
+    color: black;
+    text-align: center;
+}
+.score_h {
+    float: right;
+    /* display: inline-block; */
+    width: 12%;
+    color: black;
+    text-align: center;
+}
+.rank {
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+.name {
+    display: inline-block;
+    margin-left: 8%;
+    width: 75%;
+    background-color: white;
+    border-radius: 2px;
+    height: 2rem;
+}
+.c_name {
+    /* font-size: 0.1rem; */
+    margin-left: 1rem;
+    text-align: center;
+    transition: 1s;
+    color: white;
+}
+.score {
+    float: right;
+    /* display: inline-block; */
+    width: 15%;
+    text-align: center;
+}
+.progress {
+    display: inline-flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 100%;
+    background-color: grey;
+    text-overflow: ellipsis;
+    border-radius: 2px;
+    transition: 1.5s;
+    text-align: center;
+}
+
+#stack {
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    /* border-radius: 2px; */
+    height: 2rem;
+}
+#smstack {
+    display: block;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    /* border-radius: 2px; */
+    height: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #stack {
+        display: block;
+        width: 100%;
+        background-color: black;
+        /* border-radius: 2px; */
+        height: 1rem;
+    }
+    
+    }
+  
+  
+
+#key {
+    color: #014012;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.bars {
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 100%;
+    background-color: grey;
+    text-overflow: ellipsis;
+    /* border-radius: 2px; */
+    transition: 1.5s;
+    text-align: center;
+}
+
+.apc_p {
+    background-color: #51BAE0;
+    transition: 1s;
+}
+.pdp_p {
+    background-color: orangered;
+    transition: 1s;
+}
+.aac_p {
+    background-color: gold;
+    transition: 1s;
+}
+.ypp_p {
+    background-color: royalblue;
+    transition: 1s;
+}
+.neutral {
+    background-color: grey;
+}
+.third_p {
+    background-color: gold;
+    transition: 1s;
+}

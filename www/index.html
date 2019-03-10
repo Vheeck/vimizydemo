@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Election Watch</title>
+    <link rel="shortcut icon" href="assets/img/bg2.jpg" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> <!-- Bootstrap core CSS     -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-kit.css?v=2.1.0" rel="stylesheet"/>
+
+	<!--  CSS for Demo Purpose, don't include it in your project     -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--  Fonts and icons     -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+
+    <!-- Leader Board CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Blog CSS -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
+        <div class="container">
+            <div class="navbar-translate">
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" class="apc_p"> <img src="assets/img/bg2.jpg" style="width: 10%;" alt="LOGO"> ELECTION WATCH 2019</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="link active" href="index.html">
+                            <p class="theme active">Home</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" rel="tooltip" title="View Presidential Elections Results" data-placement="bottom" href="presidential.html">
+                            <p class="theme success">Presidential</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" rel="tooltip" title="View Governorship Elections Results" data-placement="bottom" href="governorship.html">
+                            <p class="theme">Governorship</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/Christmastobby" target="_blank">
+                            <p class="theme">Twitter</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div align="center" id="wrapper">
+
+        
+		<div class="page-header" data-parallax="true" style="background-image: url('assets/img/bg2.jpg');">
+			<div class="filter"></div>
+			<div class="container">
+			    <div class="motto text-center">
+                    <h1>WELCOME</h1>
+                    <h1 style="font-size:2rem;">TO</h1>
+                    <h1 style="font-size:4rem;">ELECTION WATCH</h1>
+			        <h3>Get the exact election results here, unultered, unbiased...</h3>
+                    <br />
+			    </div>
+			</div>
+    	</div>
+        <div class="main">
+			<div class="section text-center">
+            <div class="container">
+                    <div id="stack_bar_sect">
+                            <h2 class="head_text" style="color: #014012; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">OVERALL 2019 ELECTION RESULTS</h2>
+                            <br>
+                            <div id="stack" align="left">
+                                <div data-toggle="tooltip" data-placement="top" title="{{1 Label='APC Total'}}" data-trigger="hover" id="stack1" class="apc_p bars" style="width: 0%"></div><div data-toggle="tooltip" data-placement="top" title="{{2 Label='PDP Total'}}" data-trigger="hover" id="stack2" class="pdp_p bars" style="width: 0%"></div><div data-toggle="tooltip" data-placement="top" title="{{3 Label='AAC Total'}}" data-trigger="hover" id="stack3" class="aac_p bars" style="width: 0%"></div><div data-toggle="tooltip" data-placement="top" title="{{4 Label='YPP Total'}}" data-trigger="hover" id="stack4" class="ypp_p bars" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div id="key">
+                            <h3>Color Key</h3>
+                            <span class="keys" id="apc_key"></span><span class="key_title">APC</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="keys" id="pdp_key"></span><span class="key_title">PDP</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="keys" id="aac_key"></span><span class="key_title">AAC</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="keys" id="ypp_key"></span><span class="key_title">YPP</span>
+                        </div>
+				<br/><br/>
+				<div class="row">
+                    <style>
+                        .btn-link{
+                            background-color: #02cc38 !important;
+                            color: white !important;
+                        }
+                        .btn-link:hover {
+                            background-color: #2c8b46 !important;
+                        }    
+                    </style>
+					<div class="col-md-6">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-chart-bar-32"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title" style="color: #014012">PRESIDENTIAL ELECTION RESULTS</h4>
+                                <!-- <p style="color: gray">Choose from a veriety of many colors resembling sugar paper pastels.</p> -->
+                                <a href="presidential.html" data-toggle="tooltip" data-placement="top" title="Click to View 2019 Presidential Elections Results" data-trigger="hover"><img style="width:80%;"src="assets/img/presidential iframe.png" alt="presidential results"></a>
+                                <br>
+								<a href="presidential.html" class="btn btn-link">See more</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="info">
+							<div class="icon icon-danger">
+								<i class="nc-icon nc-sun-fog-29"></i>
+							</div>
+							<div class="description">
+								<h4 class="info-title" style="color: #014012">GOVERNORSHIP ELECTION RESULTS</h4>
+                                <!-- <p style="color: gray">Find unique and handmade delightful designs related items directly from our sellers.</p> -->
+                                <a href="governorship.html" data-toggle="tooltip" data-placement="top" title="Click to View 2019 Governorship Elections Results" data-trigger="hover"><img style="width:80%;"src="assets/img/governorship iframe.png" alt="presidential results"></a>
+                                <br>
+								<a href="governorship.html" class="btn btn-link">See more</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+            </div>
+        </div>
+        <!-- {{#section cncr Label='Candidates Corner'}} -->
+		<div style="background-color:#014012;" class="section text-center">
+            <div class="container">
+                <h1 style="color:white;"lass="title">CANDIDATES CORNER</h1>
+                <br>
+                <br>
+                <br>
+				<div>
+                    <h3 style="display:block;">TOP PRESIDENTIAL CANDIDATES</h2>
+
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/clem-onojeghuo-3.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>{{1 Label='First President' required=false}}</h4>
+                                            <h6 class="card-category">{{2 Label='First President's category required=false}}</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                            {{3 Label='First President's details required=false}}
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/joe-gardner-2.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>Sophie West</h4>
+                                            <h6 class="card-category">Designer</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                    A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/erik-lucatero-2.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>Robert Orben</h4>
+                                            <h6 class="card-category">Developer</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                    The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row"></div>
+                    
+                    <br>
+
+                    <h3 style="display:block;">TOP GOVERNORSHIP CANDIDATES</h2>
+                    
+                    <br>
+
+    				<div class="row">
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/clem-onojeghuo-3.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>Henry Ford</h4>
+                                            <h6 class="card-category">Product Manager</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                    Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/joe-gardner-2.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>Sophie West</h4>
+                                            <h6 class="card-category">Designer</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                    A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card card-profile card-plain">
+                                <div class="card-avatar">
+                                    <a href="#avatar"><img src="assets/img/faces/erik-lucatero-2.jpg" alt="..."></a>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#paper-kit">
+                                        <div class="author">
+                                            <h4>Robert Orben</h4>
+                                            <h6 class="card-category">Developer</h6>
+                                        </div>
+                                    </a>
+                                    <p class="card-description text-center">
+                                    The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.
+                                    </p>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#pablo" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    			</div>
+        	</div>
+        </div>
+        <!-- {{/section}} -->
+
+            <div class="section landing-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ml-auto mr-auto">
+                            <h2 style="color:#014012" class="text-center">I intend to have a blog put here...</h2>
+                            <div id="respond">
+
+                                <h3>Leave a Comment</h3>
+                              
+                                <form action="post_comment.php" method="post" id="commentform">
+                              
+                                  <label for="comment_author" class="required">Your name</label>
+                                  <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+                              
+                                  <label for="email" class="required">Your email</label>
+                                  <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+                              
+                                  <label for="comment" class="required">Your message</label>
+                                  <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+                              
+                                  <!-- comment_post_ID value hard-coded as 1 -->
+                                  <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+                                  <input class="btn btn-success" name="submit" type="submit" value="Submit comment" />
+                              
+                                </form>
+                              
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<footer class="footer section-dark">
+		<div class="container">
+			<div class="row">
+				<nav class="footer-nav">
+					<ul>
+						<li><a href="https://www.creative-tim.com"></a></li>
+						<li><a href="http://blog.creative-tim.com"></a></li>
+						<li><a href="https://www.creative-tim.com/license"></a></li>
+					</ul>
+				</nav>
+				<div class="credits ml-auto">
+					<span class="copyright">
+						© <script>document.write(new Date().getFullYear())</script>, by Babalola Tobi and Momoh Victor
+					</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+    </div>
+
+    <!-- Core JS Files -->
+    <script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+    <script src="assets/js/popper.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- Switches -->
+    <script src="assets/js/bootstrap-switch.min.js"></script>
+    
+    <!--  Plugins for Slider -->
+    <script src="assets/js/nouislider.js"></script>
+    
+    <!--  Plugins for DateTimePicker -->
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    
+    <!--  Paper Kit Initialization and functons -->
+    <script src="assets/js/paper-kit.js?v=2.1.0"></script>
+    
+</body>
+</html>
